@@ -1,5 +1,7 @@
 name: Example workflow for Python using Snyk
 on: push
+permissions:
+  contents: read
 jobs:
   security:
     runs-on: ubuntu-latest
