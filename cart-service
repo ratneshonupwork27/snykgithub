@@ -1,5 +1,4 @@
 import subprocess
-
-# VULNERABLE
-filename = input("Enter filename: ")
-subprocess.run(f"cat {filename}", shell=True)  # Input: file.txt; id
+username = input("Enter username: ")
+# Unsafe: shell=True allows command chaining/injection if input is unescaped
+subprocess.run(f"echo {username}", shell=True) 
