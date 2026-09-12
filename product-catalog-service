@@ -1,0 +1,4 @@
+url = "https://example.com"
+query_params = {
+    "api_key": api_key,
+    "category": "books"
